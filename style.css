@@ -1,18 +1,97 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #dbcece;
-    border: 3px solid black;
-    color: rgb(201, 171, 171);
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
-nav {
-    display: flex;
-    gap: 20px;
+p {
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-body {
-    background-color: rgb(214, 204, 190);
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+input,
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        padding: 30px;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        max-width: 800px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    header {
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    form {
+        max-width: 600px;
+    }
 }
