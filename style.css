@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #dbcece;
+    border: 3px solid black;
+    color: rgb(201, 171, 171);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+body {
+    background-color: rgb(214, 204, 190);
+}
